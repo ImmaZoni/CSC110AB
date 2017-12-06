@@ -1,0 +1,160 @@
+
+****** Creating a BankAccount using the default constructor
+
+
+****** Printing it to see what is in it
+
+Account number: 1
+Name: classified
+Creation Date: Tue Oct 30 11:14:56 MST 2012
+Balance: 0.0
+Withdrawal limit: 300.0
+
+****** Creating another BankAccount using the parameterized constructor
+
+
+****** Printing it to see what is in it
+
+Account number: 2
+Name: Bill Gates
+Creation Date: Tue Oct 30 11:14:56 MST 2012
+Balance: 0.0
+Withdrawal limit: 300.0
+
+****** Creating another BankAccount using the parameterized constructor
+
+
+****** Printing it to see what is in it
+
+Account number: 3
+Name: Larry Fitzgerald
+Creation Date: Tue Oct 30 11:14:56 MST 2012
+Balance: 0.0
+Withdrawal limit: 300.0
+
+****** Telling it to freeze
+
+
+****** Telling it to deposit 40 (it is frozen; should throw an exception)
+
+java.lang.IllegalStateException: Cannot deposit - account is frozen
+	at BankAccount.deposit(BankAccount.java:38)
+	at Program5Driver.main(Program5Driver.java:88)
+
+****** Telling it to unfreeze
+
+
+****** Telling it to withdraw some money (empty; should throw an exception)
+
+java.lang.IllegalArgumentException: Insufficient funds
+	at BankAccount.withdraw(BankAccount.java:54)
+	at Program5Driver.main(Program5Driver.java:115)
+
+****** Telling it to deposit 1565.25
+
+
+****** Telling it to return its balance
+
+The balance is: 1565.25
+
+****** Telling it to freeze
+
+
+****** Telling it to withdraw 40 (it is frozen; should throw an exception)
+
+java.lang.IllegalStateException: Cannot withdraw - account is frozen
+	at BankAccount.withdraw(BankAccount.java:60)
+	at Program5Driver.main(Program5Driver.java:163)
+
+****** Telling it to unfreeze
+
+
+****** Telling it to withdraw 2000 (insufficient funds; should throw an exception)
+
+java.lang.IllegalArgumentException: Insufficient funds
+	at BankAccount.withdraw(BankAccount.java:54)
+	at Program5Driver.main(Program5Driver.java:190)
+
+****** Telling it to deposit -40 (should throw an exception)
+
+java.lang.IllegalArgumentException: Cannot deposit negative cash
+	at BankAccount.deposit(BankAccount.java:36)
+	at Program5Driver.main(Program5Driver.java:209)
+
+****** Telling it to withdraw -30 (should throw an exception)
+
+java.lang.IllegalArgumentException: Cannot withdraw negative cash
+	at BankAccount.withdraw(BankAccount.java:52)
+	at Program5Driver.main(Program5Driver.java:227)
+
+****** Telling it to withdraw 400 (too much; thould throw an exception)
+
+java.lang.IllegalArgumentException: Withdrawal too large - limit is: 300.0
+	at BankAccount.withdraw(BankAccount.java:56)
+	at Program5Driver.main(Program5Driver.java:246)
+
+****** Telling it to withdraw 210 (not a multiple of 20; should throw an exception)
+
+java.lang.IllegalArgumentException: Must withdraw in multiples of 20
+	at BankAccount.withdraw(BankAccount.java:58)
+	at Program5Driver.main(Program5Driver.java:265)
+
+****** Telling it to withdraw 100 (should be OK)
+
+The account returned this much: 100.0
+
+****** Telling it to return its balance
+
+The balance is: 1465.25
+
+****** Telling it to freeze
+
+
+****** Telling it to change its limit to 400 (frozen; should throw an exception)
+
+java.lang.IllegalStateException: Cannot setLimit - account is frozen
+	at BankAccount.setLimit(BankAccount.java:83)
+	at Program5Driver.main(Program5Driver.java:314)
+
+****** Telling it to unfreeze
+
+
+****** Telling it to change its limit to 800 (too big; should throw an exception)
+
+java.lang.IllegalArgumentException: Cannot change the limit to more than 500.0
+	at BankAccount.setLimit(BankAccount.java:81)
+	at Program5Driver.main(Program5Driver.java:341)
+
+****** Telling it to change its limit to -50 (negative; should throw an exception)
+
+java.lang.IllegalArgumentException: Cannot set withdrawal limit to negative number
+	at BankAccount.setLimit(BankAccount.java:79)
+	at Program5Driver.main(Program5Driver.java:359)
+
+****** Telling it to change its limit to 400 (should be OK)
+
+
+****** Telling it to return its balance
+
+The balance is: 1465.25
+
+****** Telling it to withdraw 400 (should be OK now)
+
+The account returned this much: 400.0
+
+****** Telling it to return its balance
+
+The balance is: 1065.25
+
+****** Printing it
+
+Account number: 3
+Name: Larry Fitzgerald
+Creation Date: Tue Oct 30 11:14:56 MST 2012
+Balance: 1065.25
+Withdrawal limit: 400.0
+
+****** Telling BankAccount to return the number of accounts
+
+BankAccount reports 3 account(s) so far
+

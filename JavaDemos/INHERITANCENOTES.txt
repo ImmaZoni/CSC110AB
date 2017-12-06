@@ -1,0 +1,32 @@
+A class can be defined as a "subclass" of another class.
+When that happens, it can "inherit" the data and methods
+of its parent class.
+
+1. To set it up (for example)
+         //Student will be a subclass of Human
+         public class Student extends Human 
+        
+ 
+2.  Data/methods that are public are automatically inherited
+    Data/methods that are private are NOT inherited (they are 
+          only in their own class)
+    Data/methods that are protected are not visible everywhere
+          (like public), but they are inheritable.
+    So...anything that you want to be inherited should be protected
+          (if its not public)
+
+          
+3.  Constructors are NOT inherited.   So a subclass always has
+    to have its own constructors.   But...if you just want the 
+    subclass's constructors to do the same thing as the parent's
+    constructors, it can call the parent's constructors with
+            super();     //calls parent's default constructor, passing in args
+            super(3, 5); //calls parent's parameterized constructor that expects 2 ints         
+  
+4.  Subclasses can inherit methods, or they can write their own.
+    A subclass's method can "override" the parent's method.  This is when
+    it has the same name and (number/type of) arguments as the parent class's method; if so,
+    the subclass's will be used.
+
+     
+5.  Java's Object class is a superclass to EVERY class (builtin or one you wrote).

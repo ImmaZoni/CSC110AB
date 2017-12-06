@@ -1,0 +1,15 @@
+public class Circle
+{
+    //data
+            private int centerX;
+            private int centerY;
+            private int radius;
+            
+    //constructors
+
+    //parameterized constructors
+
+    //methods
+
+    //toSting
+}

@@ -1,0 +1,26 @@
+CSC110AB
+
+Write a program (any name you want) that does this:
+
+   - asks the user to enter an integer
+   - reads the integer from the keyboard and stores it in a variable
+   
+   - prints a blank line before starting the output
+
+   - if the integer is negative, prints the integer and " is negative" 
+
+   - if the integer is evenly divisible by 7, prints the integer and " is divisible by 7"
+     NOTE:  it is evenly divisible by 7 if the remainder when you divide by 7 is 0
+
+   - if the integer is even, prints the integer and " is even"     for example:  6 is even
+     but if the integer is odd, prints the integer and " is odd"   (remember - if it is not even, then its odd...)
+     NOTE:  it is even if the remainder when you divide by 2 is 0
+
+   - if the integer is between 13 and 20 (including 13 but not including 20) then prints 2 things:
+          prints the integer and " is between 13 (inclusive) and 20 (exclusive)"
+          also prints the integer and " is in the teens"
+
+   - if the integer has at least 2 digits, prints the integer and " has at least 2 digits"
+
+  
+ RUN IT WITH VARIOUS INPUTS TO TEST IT!!  
